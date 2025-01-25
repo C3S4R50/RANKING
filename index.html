@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Jogadores</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Avaliação de Jogadores</h1>
+    </header>
+
+
+    <section id="image-selection" class="image-selection">
+        <!-- As cartas serão exibidas aqui -->
+    </section>
+
+
+    <!-- Formulário de Avaliação -->
+    <section id="avaliarForm" style="display: none;">
+        <h2>Avaliar Jogador</h2>
+        <form id="formAvaliar">
+            <label for="imagemSelecionada">Imagem do Jogador</label>
+            <input type="text" id="imagemSelecionada" disabled>
+
+
+            <label for="chu">CHU:</label>
+            <input type="number" id="chu" min="0" max="5">
+
+
+            <label for="pas">PAS:</label>
+            <input type="number" id="pas" min="0" max="5">
+
+
+            <label for="for">FOR:</label>
+            <input type="number" id="for" min="0" max="5">
+
+
+            <label for="def">DEF:</label>
+            <input type="number" id="def" min="0" max="5">
+
+
+            <label for="vel">VEL:</label>
+            <input type="number" id="vel" min="0" max="5">
+
+
+            <label for="dri">DRI:</label>
+            <input type="number" id="dri" min="0" max="5">
+
+
+            <button type="button" onclick="salvarJogador()">Salvar Avaliação</button>
+        </form>
+    </section>
+
+
+    <!-- Área para exibir as cartas avaliadas -->
+    <section id="cards-avalidados" class="cards-avalidados">
+        <h2>Jogadores Avaliados</h2>
+        <div id="avaliados"></div>
+        
+    </section>
+
+    <section>
+        <form id="avaliarForm" style="display: none;">
+            <input type="number" id="chu" placeholder="CHU">
+            <input type="number" id="pas" placeholder="PAS">
+            <input type="number" id="for" placeholder="FOR">
+            <input type="number" id="def" placeholder="DEF">
+            <input type="number" id="vel" placeholder="VEL">
+            <input type="number" id="dri" placeholder="DRI">
+            <button type="button" onclick="salvarJogador()">Salvar</button>
+        </form>
+        
+    </section>
+
+    <section>
+        <nav>
+            <a href="index.html">Avaliar Jogadores</a>
+            <a href="classeA.html">Classe A</a>
+            <a href="classeB.html">Classe B</a>
+            <a href="classeC.html">Classe C</a>
+            <a href="historico.html">Histórico</a>
+            
+        </nav>
+        
+    </section>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
